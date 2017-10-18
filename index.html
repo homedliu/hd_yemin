@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="YES">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <title>横店邀您开启“迎春仪”</title>
+    <link rel="stylesheet" href="css/style.min.css"/>
+    <script src="js/jquery-1.9.1.js"></script>
+    <script src="js/wScratchPad.min.js"></script>
+    <script src="js/pageResponse.min.js"></script>
+    <script >
+        window.onload  = function(){
+            $("#gj_con").wScratchPad({
+                size        : 15,
+                bg          : false,
+                fg          : "./images/gjq_img.png",
+                realtime    : true,
+                //     scratchDown : null,
+                scratchDown   : function(e, percent){
+                    $(".win").show();
+                },
+                scratchMove : function(e, percent){
+                    if(percent >50){
+                        this.clear();
+                    }
+                }
+            });
+            pageResponse({
+                selectors : '.cj_con',     //模块选择器，使用querySelectorAll的方法
+                mode : 'contain',     // auto || contain || cover ，默认模式为auto
+                width : '375',      //输入页面的宽度，只支持输入数值，默认宽度为320px
+                height : '603'      //输入页面的高度，只支持输入数值，默认高度为504px
+            });
+            pageResponse({
+                selectors : '.page5_con',
+                mode : 'contain',
+                width : '375',
+                height : '603'
+            }) ;
+
+        }
+    </script>
+
+</head>
+
+<body>
+<script src="js/flower.js"></script>
+<img src="images/flower_01.png" style="opacity: 0">
+<img src="images/flower_02.png" style="opacity: 0">
+<img src="images/flower_03.png" style="opacity: 0">
+<img src="images/flower_04.png" style="opacity: 0">
+<img src="images/flower_05.png" style="opacity: 0">
+<div id="main"  class="main">
+
+    <!--音乐开关-->
+    <button class="btn_music"><i></i><audio loop="loop"  id="media" > <source src="music/music.mp3" type="audio/mpeg"></audio></button>
+    <!--音乐开关end-->
+    <!--加载页面-->
+    <div class="loading_page" >
+        <p><span class="current">1%</span></p>
+    </div>
+    <!--加载页面end-->
+
+    <!--page1 门-->
+    <div class="page1">
+        <div class="hd_head"><img src="images/hd_titlebg.png" alt="title_bg"/></div>
+        <div class="door">
+            <div class="leftdoor"><img src="images/leftdoor.jpg" alt="leftdoor"/></div>
+            <div class="rightdoor"><img src="images/rightdoor.jpg" alt="rightdoor"/></div>
+            <button class="btn_opendoor"></button>
+            <div class="white_light"></div>
+        </div>
+
+    </div>
+    <!--page1 end-->
+
+    <!--page2 引子-->
+    <div class="page2">
+            <!--背景-->
+        <img class="page2_bg" src="images/page2_bg.jpg" alt="page2_bg"/>
+            <!--花-->
+        <img class="img_hehua"  src="images/hehua.png" alt="hehua"/>
+            <!--仙女-->
+        <img class="img_xiannv" src="images/xiannv.png" alt="xiannv"/>
+            <!--page2 内容-->
+        <div class="page2_con">
+            <img class="img_hongkuang" src="images/hongkuang.png" alt=""/>
+            <div class="page2_text">
+                <img class="page2_text01"  src="images/page2_text01.png" alt="" width="45"/>
+                <img class="page2_text02"  src="images/page2_text02.png" alt="" width="73"/>
+
+            </div>
+            <p><a href="javascript:void(0);" class="btn_explain">查看游戏说明</a></p>
+            <button class="btn_go btn_kscy">
+               <img  src="images/btn_kscy.png" alt="" width="223"/>
+            </button>
+        </div>
+    </div>
+    <!--page2 end-->
+
+    <!--page3 说明-->
+    <div class="page3">
+        <!--背景-->
+        <img class="page3_bg" src="images/page3_bg.jpg" alt="page3_bg"/>
+        <!---->
+        <div class="page3_title"><img   src="images/page3_title.png" alt=""/></div>
+        <!--page3 内容-->
+        <div class="page3_con">
+            <div class="page3_con_text">
+                <div class="con_text">
+                <dl>
+                    <dt>游戏方法</dt>
+                    <dd>1、选择一个主打场景，开启穿越之旅；</dd>
+                    <dd>2、点击“生成我的专属海报”，随机生成一段属于你的“穿越故事”；</dd>
+                    <dd>3、将生成的海报分享至朋友圈，即可获得一次抽奖机会。</dd>
+                </dl>
+                <dl>
+                    <dt>奖品：</dt>
+                    <dd>1、微信现金红包；</dd>
+                    <dd>2、横店影视城官方网站产品预订“抵金券”。</dd>
+                    <dd>   （以上奖品数量有限，先到先得）</dd>
+                </dl>
+                    <dl>
+                        <dt>规则</dt>
+                        <dd>1、任意玩，每个微信用户无游戏次数限制；</dd>
+                        <dd>2、领取的现金红包将直接存于个人微信钱包内；</dd>
+                        <dd>3、“抵金券”可用于在横店影视城官网上预定产品（景区门票、酒店住宿等。</dd>
+                    </dl>
+                    <!--<div class="menshi_text">-->
+                        <!--<h2>门市价值<span>12390元/ 套</span></h2>-->
+                        <!--<p>数量有限，送完为止哟！</p>-->
+                    <!--</div>-->
+                </div>
+                <img src="images/page3_con_bg.png" alt=""/>
+            </div>
+            <button class="btn_go btn_fhyx"><img  src="images/btn_fhyx.png" alt="" width="223"/></button>
+            <div class="bottom_con">
+                <p>本活动最终解释权，归横店影视城所有</p>
+                <p><span>powered by <a href="www.bianguo.com.cn">bianguo</a></span></p>
+            </div>
+        </div>
+    </div>
+    <!--page3 end-->
+
+    <!--page4-->
+    <div class="page4">
+        <!--图片轮播开始-->
+        <div class="banner" >
+            <div class="flexslider">
+                <ul class="slides">
+                    <!--秦王宫-->
+                    <li class="flex-active-slide">
+                        <div class="cj_box">
+                            <img class="page4_qwg_bg" src="images/page4_qwg_bg.jpg" alt=""/>
+                            <div class="cj_con">
+                                <div class="page4_title"><img  src="images/page4_title.png" alt=""/></div>
+                                <div class="page4_img"><img src="images/img_qhg.png" alt=""/></div>
+                                <button class="btn_cyd btn_qhg"><img src="images/btn_cyd_img.png" alt=""/></button>
+                                <div class="tx_ce"><div class="page4_text" id="iscroll"><p>秦王宫景区是1997年为著名导演陈凯歌拍摄《荆轲刺秦王》而建。秦王宫以宏伟的建筑特色吸引了《英雄》、《画皮》、《功夫之王》、《木乃伊：龙帝之墓》、《天将雄狮》、《无极》、《鸿门宴》等大片来这里取景拍摄，同时也诞生了《寻秦记》、《琅琊榜》、《芈月传》、《蜀山战纪》、《武媚娘传奇》、《陆贞传奇》、《汉武大帝》、《大汉天子》、《美人心计》、《新三国演义》、《秦时明月》等影视作品。</p></div></div>
+                            </div>
+                        </div>
+                    </li>
+                    <!--清明上河图-->
+                    <li >
+                        <div class="cj_box">
+                            <img class="page4_qwg_bg" src="images/page4_qh_bg.jpg" alt=""/>
+                            <div class="cj_con">
+                                <div class="page4_title"><img  src="images/page4_title.png" alt=""/></div>
+                                <div class="page4_img"><img src="images/img_qmsht.png" alt=""/></div>
+                                <button class="btn_cyd btn_qmsht"><img src="images/btn_cyd_img.png" alt=""/></button>
+                                <div class="tx_ce"><div class="page4_text" id="iscroll_01"><p>清明上河图景区是根据北宋著名画家张择端的巨作《清明上河图》为蓝本，结合北宋时期的社会背景、民俗、民风及宋时的古建特色，按影视拍摄的需要建造而成的影视基地。代表影视作品：《仙剑奇侠传》、《古剑奇谭》、《四大名捕》、《小李飞刀》《杨门女将》《绝代双娇》《白发魔女传》《犀利仁师》、《狄仁杰之神都龙王》、《西游降魔篇》等。</p></div></div>
+                            </div>
+
+
+                        </div>
+                    </li>
+                    <!--明清宫苑-->
+                    <li >
+                        <div class="cj_box">
+                            <img class="page4_qwg_bg" src="images/page4_mqgy_bg.jpg" alt=""/>
+                            <div class="cj_con">
+                                <div class="page4_title"><img  src="images/page4_title.png" alt=""/></div>
+                                <div class="page4_img"><img src="images/img_mqgy.png" alt=""/></div>
+                                <button class="btn_cyd btn_mqgy"><img src="images/btn_cyd_img.png" alt=""/></button>
+                                <div class="tx_ce"><div class="page4_text" id="iscroll_02"><p>明清宫苑景区是按照北京故宫1:1比例修建的，占地1500亩，是横店影视城目前最大的影视基地。汇聚了京城宫殿、皇家园林、王府衙门、胡同民宅等四达建筑系列，真实地再现了北京故宫原貌及老北京民居。在此共拍摄了《天下无双》、《满 城尽带黄金甲》、《金枝欲孽》、《鹿鼎记》《还珠格格》等百余部影视大片。后宫戏大热的今天，明清宫苑更是引得剧组蜂拥而至，《宫锁心玉》、《甄嬛传》、《深宫谍影》、《宫锁珠帘》《步步惊心》等热播剧均在此取景，随处可见明星演员拍戏工作的忙碌身影。</p></div></div>
+                            </div>
+
+
+                        </div>
+                    </li>
+                    <!--广州街香港街-->
+                    <li >
+                        <div class="cj_box">
+                            <img class="page4_qwg_bg" src="images/page4_gzxgj_bg.jpg" alt=""/>
+                            <div class="cj_con">
+                                <div class="page4_title"><img  src="images/page4_title.png" alt=""/></div>
+                                <div class="page4_img"><img src="images/img_gzxgj.png" alt=""/></div>
+                                <button class="btn_cyd btn_gzxgj"><img src="images/btn_cyd_img.png" alt=""/></button>
+                                <div class="tx_ce"><div class="page4_text" id="iscroll_03"><p>广州街•香港街景区始建于1996年8月，为拍摄历史巨片《鸦片战争》而建。以逼真的实景建筑，艺术地再现了1840年 前后的羊城旧貌和香江风韵，是中国好莱坞——横店影视城发源地。融汇中西的粤港风格建筑吸引了一大批谍战剧和抗战剧在此取景拍摄，在此拍摄了《鸦片战争》、《潜伏》、《伪装者》、《百年沉浮》、《保密局的枪声》等影视大片以及《雍正王朝》、《小李飞刀》、《天下粮仓》、《大染坊》、《大陆小岛》、《奇幻冒险王》、《喋血女人花》、《新京华烟云》等数百部影视剧。</p></div></div>
+                            </div>
+
+
+                        </div>
+                    </li>
+                    <!--梦幻谷-->
+                    <li >
+                        <div class="cj_box">
+                            <img class="page4_qwg_bg" src="images/page4_mhg_bg.jpg" alt=""/>
+                            <div class="cj_con">
+                                <div class="page4_title"><img  src="images/page4_title.png" alt=""/></div>
+                                <div class="page4_img"><img src="images/img_mhg.png" alt=""/></div>
+                                <button class="btn_cyd btn_mhg"><img src="images/btn_cyd_img.png" alt=""/></button>
+                                <div class="tx_ce"><div class="page4_text" id="iscroll_04"><p>梦幻谷景区是以火山爆发、暴雨山洪等各种自然风貌展示为主要内容的国内最大夜间影视体验主题乐园。拥有梦幻般绚丽的场景、众多有惊无险的游乐项目、超大型室内高科技亲子儿童乐园—儿童梦工厂、华东地区项目最全的清凉水世界以及两台顶级的实景演出—《梦幻太极》、《暴雨山洪》。</p></div></div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--图片轮播结束-->
+
+    </div>
+    <!--page4 end-->
+
+    <!--page5-->
+    <div class="page5">
+        <img class="page5_bg" src="images/page5_bg.jpg" alt="page5_bg"/>
+        <div class="page5_con">
+            <div class="page5_img page5_qhg_img" style="display: block">
+                <div>
+                <img src="images/page5_qhg_img.jpg" alt=""/>
+                <img  class="dh_luoye01" src="images/dh_luoye01.png" alt=""/>
+                <img  class="dh_luoye02" src="images/dh_luoye02.png" alt=""/>
+                <img  class="dh_luoye03" src="images/dh_luoye03.png" alt=""/>
+                </div>
+            </div>
+            <div class="page5_img page5_gzxgj_img"  >
+                <img src="images/page5_gzxgj_img.jpg" alt=""/>
+                <img class="dh_gzxgj" src="images/dh_gzxgj.png" alt=""/>
+                <img class="dh_gzxgj02" src="images/dh_gzxgj02.png" alt=""/></div>
+            <div class="page5_img page5_mhg_img"  ><img src="images/page5_mhg_img.jpg" alt=""/><img class="dh_mhg" src="images/dh_mhg.png" alt=""/></div>
+            <div class="page5_img page5_qmsht_img"  >
+                <img src="images/page5_qmsht_img.jpg" alt=""/>
+                <img class="dh_qmsht" src="images/dh_qmsht01.png" alt=""/>
+            </div>
+            <div class="page5_img page5_mqgy_img">
+                <img class="dh_mqgy" src="images/dh_mqgy.png" alt=""/>
+                <img class="page_bg" src="images/page5_mqgy_img.jpg" alt=""/>
+                <!--<span class="bg"></span>-->
+            </div>
+            <div class="page5_text clearfix">
+                <div class="left">
+                    <span class="user_tx"><img src="images/img01.jpg" alt=""/></span>
+                    <p>Mr鹿先森</p>
+                </div>
+                <div class="right">
+                    <p>2016·3月12月，这夜晚电闪雷鸣，一阵晕眩过后，我竟来到了“秦王宫”，听侍卫讲道，此乃“横店春游大会”，原来，我穿越啦！。美酒佳肴，佳丽万千，我就在这儿，哪都不去了！</p>
+                </div>
+            </div>
+            <div class="page5_btn clearfix">
+                <button class="left"><img src="images/btn_fx.png" alt=""/></button>
+                <button class="right btn_cxsct"><img src="images/btn_cxsc.png" alt=""/></button>
+            </div>
+            <p class="jushuo_p">据说只要  分享专属海报至朋友圈，就有机会穿越，还不赶紧试试！</p>
+        </div>
+    </div>
+    <!--page5 end-->
+    <!--page6 抽奖-->
+    <div class="page6" >
+        <button class="btn_close"><span class="lines"></span></button>
+        <img class="page6_bg" src="images/page3_bg.jpg" alt="page3_bg"/>
+        <div class="page6_title"><p><img  src="images/page6_title.png" alt="page6_title"/></p></div>
+        <img class="page3_yun_left" src="images/page3_yun_left.png" alt="" width="80"/>
+        <img class="page3_yun_right" src="images/page3_yun_right.png" alt="" width="80"/>
+        <div class="page6_con">
+            <img src="images/page3_con_bg.png" alt="" width="100%"/>
+            <div class="page6_gyg"><img src="images/page6_gyg.png" alt=""/></div>
+            <div class="gj">
+                <div class="gj_box">
+                    <img class="cj_bg" src="images/cj_bg.png" alt=""/>
+                    <div class="gj_bg">
+                        <div id="gj_con" class="gj_con">
+                            <div class="win">
+                                <!--红包-->
+                                <div class="red_paper" style="display: none">
+                                    <h5>恭喜您，中奖啦！</h5>
+                                    <p>50元现金红包</p>
+                                </div>
+                                <!--抵价码-->
+                                <div class="djm_box">
+                                    <h5>恭喜您，中奖啦！</h5>
+                                    <p>商城抵价码<br><span>201603120332</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--抽中红包显示该按钮-->
+                <button class="btn_ljlq"><img src="images/btn_ljhq.png" alt="" width="160"/></button>
+                <!--抽中抵价码显示该段字-->
+                <p class="djm_p">保存图片或者记录抵价码，即可在<br>横店官方商城、微信城使用</p>
+            </div>
+            <div class="page6_guize"><img src="images/page6_guize.png" alt=""/></div>
+
+        </div>
+        <div class="bottom_con">
+            <p>本活动最终解释权，归横店影视城所有</p>
+            <p><span>powered by <a href="www.bianguo.com.cn">bianguo</a></span></p>
+        </div>
+        <!--领取成功-->
+        <div class="success_box">
+            <div class="pop"></div>
+            <div class="success">
+                <p>领取成功，<br>现金直接存入微信零钱包</p>
+                <a class="btn_ok">好</a>
+            </div>
+        </div>
+        <!--领取奖品-->
+        <div class="prize_box">
+            <div class="pop"></div>
+            <div class="prize_con">
+                <img src="images/page6_lqjj_text.png" alt="" width="118"/>
+                <form >
+                    <p><input type="text" placeholder="请输入姓名"/></p>
+                    <p><input type="text" placeholder="请输入您的身份证号码"/></p>
+                    <div class="submit_box">
+                        <button><img src="images/btn_queding.png" alt="" width="170"/></button>
+                        <div>提交信息后，</br>凭此身份证即可直接进入7大景区游玩！</div>
+                        <div class="time">有效期：2016年3月8日－6月30日</div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--page6 end-->
+</div>
+<script src="js/resLoader.js"></script>
+<script>
+    var loader = new resLoader({
+        resources : [
+            'images/hd_titlebg.png',
+            'images/leftdoor.jpg',
+            'images/rightdoor.jpg',
+            'images/page2_bg.jpg',
+            'images/hehua.png',
+            'images/xiannv.png',
+            'images/hongkuang.png',
+            'images/page2_text01.png',
+            'images/page2_text02.png',
+            'images/btn_kscy.png',
+            'images/page3_bg.jpg',
+            'images/page3_title.png',
+            'images/page3_con_bg.png',
+            'images/img_qhg.png',
+            'images/img_qmsht.png',
+            'images/img_mqgy.png',
+            'images/img_gzxgj.png',
+            'images/img_mhg.png',
+            'images/btn_fhyx.png',
+            'images/page5_gzxgj_img.jpg',
+            'images/page5_mhg_img.jpg',
+            'images/page5_mqgy_img.jpg',
+            'images/page5_qhg_img.jpg',
+            'images/page5_qmsht_img.jpg'
+        ],
+        onStart : function(total){
+            // console.log('start:'+total);
+        },
+        onProgress : function(current, total){
+            var percent = parseInt(current/total*100);
+            $('.current').text(percent+'%');
+        },
+        onComplete : function(){
+            $(".loading_page").fadeOut(500);
+        }
+    });
+    loader.start();
+</script>
+<script src="js/index.js"></script>
+<script src="js/iscroll.js"></script>
+<script src="js/jquery.flexslider-min.js"></script>
+
+<script>
+    $(function(){
+        $('.flexslider').flexslider({
+            animation:'fade',
+            animationSpeed:1500,
+            slideshow:false,
+            controlsContainer: '.flexslider',
+            touch:false
+        });
+    });
+</script>  <!-- 幻灯片滚动 -->
+
+<script>
+    var myscroll;
+    var myscroll_01;
+    var myscroll_02;
+    var myscroll_03;
+    var myscroll_04;
+    function loaded(){
+        myscroll=new iScroll("iscroll");
+        myscroll_01=new iScroll("iscroll_01");
+        myscroll_02=new iScroll("iscroll_02");
+        myscroll_03=new iScroll("iscroll_03");
+        myscroll_04=new iScroll("iscroll_04");
+    }
+    window.addEventListener("DOMContentLoaded",loaded,false);
+</script>
+</body>
+</html>
